@@ -1,0 +1,5 @@
+# Ignore everything in the test folder
+/test/*
+
+# But track the .gitkeep file
+!/test/.gitkeep
