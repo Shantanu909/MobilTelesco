@@ -8,17 +8,4 @@
 !.gitkeep
 
 # Ignore all folders (and their contents) except .gitkeep
-test/*
-
-# But keep the .gitkeep file inside the test folder
-!test/.gitkeep
-
-# If you have subfolders within the test folder, this ensures they are ignored
-test/*/
-!test/*/.gitkeep
-
-# You can add similar rules for other folders you want to ignore
-# For example, if you have a data folder:
-# /data/*
-# !/data/.gitkeep
-# !/data/*/.gitkeep
+01-Dec-2024err/*
