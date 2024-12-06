@@ -9,3 +9,4 @@
 
 # Ignore all folders (and their contents) except .gitkeep
 01-Dec-2024err/*
+01-Dec-2024err/!.gitkeep
