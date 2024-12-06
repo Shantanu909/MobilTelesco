@@ -1,12 +1,8 @@
-# Ignore everything in the repository
-*
-
-# Don't ignore the .gitignore file itself
-!.gitignore
-
-# Don't ignore the .gitkeep file (to preserve folder structure)
-!.gitkeep
-
-# Ignore all folders (and their contents) except .gitkeep
-01-Dec-2024err/*
-01-Dec-2024err/!.gitkeep
+# Ignore data folders
+01-Dec-2024err/
+02-Dec-2024/
+03-Dec-2024/
+25-Nov-2024/
+26-Nov-2024/
+27-Nov-2024/
+28-Nov-2024/
