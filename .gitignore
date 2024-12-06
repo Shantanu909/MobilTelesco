@@ -1,5 +1,13 @@
-# Ignore everything in the test folder
-/test/*
+# Ignore all files in the directory
+*
 
-# But track the .gitkeep file
-!/test/.gitkeep
+# Don't ignore .gitignore file itself
+!.gitignore
+
+# Don't ignore .gitkeep files (to keep empty folders in the repo)
+!.gitkeep
+
+
+#/data/*   # Ignore all files in data folder, except .gitkeep
+# !/data/.gitkeep  # Don't ignore .gitkeep
+
