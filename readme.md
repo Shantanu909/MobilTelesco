@@ -154,7 +154,7 @@ GitHub: https://github.com/Shantanu-Parmar
 
 ## 🖼️ Preview
 
-![MobilTelesco Logo](mobiltelesco-logo.png)  
+![MobilTelesco Logo](mbtrlogo.png)  
 *“A telescope in your pocket. The universe on your screen.”*
 ---
 
