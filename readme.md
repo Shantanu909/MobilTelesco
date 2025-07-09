@@ -1,9 +1,6 @@
 # MobilTelesco: A Smartphone-Based Astrophotography Dataset
 
 MobilTelesco is a pioneering, open-access dataset featuring astrophotography images captured using **affordable smartphone setups**. This project explores how modern consumer devices—paired with basic stabilization techniques—can democratize sky observation and contribute to citizen-led astronomical research and machine learning applications.
-
-> Developed entirely by Shan Parmar, an undergraduate researcher from Marwadi University, India, MobilTelesco reflects a passion-driven initiative to make astrophotography more inclusive and computationally accessible.
-
 ---
 
 ## 🌌 Overview
