@@ -71,7 +71,10 @@ MobilTelesco/
 │   │       └── ...
 │
 ├── LICENSE         # CC-BY 4.0 License
+├── 8_classes.txt   # Label key for the 8 classes version 
+├── 26_classes.txt  # Label key for the 26 classes version 
 └── README.md       # Project overview, usage, citation
+
 ```
 
 </details>
