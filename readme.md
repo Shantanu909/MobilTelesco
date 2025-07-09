@@ -17,35 +17,79 @@ This dataset was used in the paper **“Evaluating Deep Learning Models on Smart
 ## 📁 Dataset Contents
 
 MobilTelesco/
-├── images/ # Main astrophotography dataset (JPG, PNG)
-│ ├── IMG_001.jpg
-│ ├── IMG_002.jpg
-├── labels.csv # (Optional) Metadata: device, timestamp, exposure, location
-├── metadata.json # Extended metadata (where available)
-├── LICENSE # CC-BY 4.0
-└── README.md # Project overview, citation, usage
+├── DATA/
+│
+│── Unlabelled/
+│   ├── 20sEXP/
+│   │   ├── 10-Mar-2025/
+│   │   │   ├── 10marrun1/
+│   │   │   │   ├── LIGHTS/
+│   │   │   │   │   └── *.dng
+│   │   │   │   ├── SkyMap/
+│   │   │   │   │   ├── Start.jpg
+│   │   │   │   │   └── End.jpg
+│   │   │   │   ├── Compressed/
+│   │   │   │   │   └── *.jpg
+│   │   ├── 16-Mar-2025/
+│   │   ├── 17-Mar-2025/
+│   │   └── ...
+│
+│   ├── 30sEXP/
+│   │   ├── 04-Jan-2025/
+│   │   │   ├── 4janrun1/
+│   │   │   │   ├── DARKS/         # Raw dark frames (.dng)
+│   │   │   │   ├── LIGHTS/        # Raw light frames (.dng)
+│   │   │   │   ├── SkyMap/        # Start/End snapshots (.jpg)
+│   │   │   │   └── Compressed/
+│   │   │   │       ├── DARKS/     # Compressed darks (.jpg)
+│   │   │   │       └── LIGHTS/    # Compressed lights (.jpg)
+│   │   │   ├── 4janrun2/
+│   │   ├── 05-Jan-2025/
+│   │   ├── 1-Feb-2025/
+│   │   └── ...
+│
+│   ├── RAWonly/
+│   │   ├── 02-Dec-2024/
+│   │   │   ├── 2decrun1/
+│   │   │   │   ├── DARKS/
+│   │   │   │   ├── LIGHTS/
+│   │   │   │   └── SkyMap/
+│   │   │   ├── 2decrun2/
+│   │   │   │   ├── DARKS/
+│   │   │   │   ├── LIGHTS/
+│   │   │   │   └── SkyMap/
+│   │   ├── 03-Dec-2024/
+│   │   ├── 04-Dec-2024/
+│   │   └── ...
+│
+│
+│── Labelled/
+│   └── 8-Classes/
+│       ├── 04-Jan-2025/
+│       │   ├── IMG_*.jpg         # Compressed input image
+│       │   └── IMG_*.txt         # Associated label file (YOLO or class-wise tags)
+│       ├── 05-Jan-2025/
+│       ├── 1-Feb-2025/
+│       └── ...
+│
+├── LICENSE         # CC-BY 4.0 License
+└── README.md       # Overview, structure, usage, and citation info
 
-yaml
-Copy
-Edit
 
 ---
 
-## 🧾 Metadata Description
+🧾 Notes
+Unlabelled/: Raw and compressed astrophotography runs across different dates and exposure settings (20s, 30s, RAW-only), main dataset.
 
-| Field        | Description                                 |
-|--------------|---------------------------------------------|
-| filename     | Image file name (e.g., IMG_003.jpg)         |
-| timestamp    | UTC datetime of capture                     |
-| location     | Approximate location (City or GPS, optional)|
-| phone_model  | Smartphone make/model used                  |
-| exposure     | Exposure time or app used (e.g., NightCap)  |
-| sky_target   | Visible objects (e.g., Milky Way, Orion)    |
+Labelled/8-Classes/: Labelled data. Every .jpg has an associated .txt file.
+
+SkyMap/: Contains snapshots of the sky at the beginning and end of each session.
+
+Compressed/: Optimized versions of raw .dng images that are primarly used for labelling. 
 
 ---
 
 ## 💡 Use Cases
-
 MobilTelesco can serve multiple research and outreach purposes:
 - 📸 **Low-Cost Astronomy Education** – For schools or institutions lacking telescope access
 - 🤖 **Computer Vision & ML Training** – Train models for star detection, sky enhancement
@@ -61,18 +105,13 @@ You are free to:
 - Use, share, and adapt the data
 - Even for commercial purposes  
 **But you must give appropriate credit** to the dataset author.
-
 ---
 
 ## 📚 Citation
 
 If you use this dataset in your work, please cite:
 
-Shan Parmar. (2025). MobilTelesco: A Smartphone-Based Astrophotography Dataset. Zenodo. https://doi.org/xxxxx
-
-yaml
-Copy
-Edit
+Shantanusinh Parmar. (2025). MobilTelesco: A Smartphone-Based Astrophotography Dataset. Zenodo. https://doi.org/xxxxx
 
 > 📌 Zenodo DOI will be updated once uploaded and published.
 
@@ -106,9 +145,9 @@ I welcome:
 - Educational or citizen science outreach projects
 
 📬 **Shan Parmar**  
-📧 Email: *yourname@domain.com*  
-🌐 Website: [shanparmar.in](https://yourwebsite.com)  
-GitHub: [github.com/yourusername](https://github.com/yourusername)
+📧 Email: *shantanu.c.parmar@gmail.cpm*  
+🌐 Website: https://shantanu-parmar.github.io/  
+GitHub: https://github.com/Shantanu-Parmar
 
 ---
 
@@ -116,14 +155,11 @@ GitHub: [github.com/yourusername](https://github.com/yourusername)
 
 ![MobilTelesco Logo](mobiltelesco-logo.png)  
 *“A telescope in your pocket. The universe on your screen.”*
-
 ---
 
 ## 🙏 Acknowledgements
 
 Special thanks to:
-- Open-source communities enabling computational astronomy
-- The rural night skies of Gujarat for providing dark sky conditions
-- Anyone who's ever pointed their phone at the stars and wondered
-
+-- Ms. Sophia Bhatti (UPenn)
+-- Ms. Maria Pasayalo (UofF)
 ---
