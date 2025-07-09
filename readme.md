@@ -13,43 +13,40 @@ Smartphone sensors have advanced to the point where, with some patience and long
 This dataset was used in the paper **“Evaluating Deep Learning Models on Smartphone-Based Astrophotography”**, accepted at **CAIP 2025** (Computer Analysis of Images and Patterns).
 
 ---
+### 📁 Dataset Structure
 
-## 📁 Dataset Contents
+<details>
+<summary>Click to expand full directory layout</summary>
 
-<details> <summary><strong>📁 Dataset Structure (click to expand)</strong></summary>
-plaintext
-Copy
-Edit
+```
 MobilTelesco/
 ├── DATA/
-│
 │   ├── Unlabelled/
 │   │   ├── 20sEXP/
 │   │   │   ├── 10-Mar-2025/
 │   │   │   │   ├── 10marrun1/
 │   │   │   │   │   ├── LIGHTS/           # Raw light frames (.dng)
-│   │   │   │   │   ├── SkyMap/           # Sky reference images
+│   │   │   │   │   ├── SkyMap/           # Sky reference frames
 │   │   │   │   │   │   ├── Start.jpg
 │   │   │   │   │   │   └── End.jpg
-│   │   │   │   │   └── Compressed/       # Compressed versions (.jpg)
+│   │   │   │   │   └── Compressed/       # Compressed .jpg version
 │   │   │   ├── 16-Mar-2025/
 │   │   │   ├── 17-Mar-2025/
 │   │   │   └── ...
-│   │
 │   │   ├── 30sEXP/
 │   │   │   ├── 04-Jan-2025/
 │   │   │   │   ├── 4janrun1/
 │   │   │   │   │   ├── DARKS/            # Raw dark frames (.dng)
 │   │   │   │   │   ├── LIGHTS/           # Raw light frames (.dng)
-│   │   │   │   │   ├── SkyMap/           # Start & End frames (.jpg)
+│   │   │   │   │   ├── SkyMap/
+│   │   │   │   │   │   ├── Start.jpg
+│   │   │   │   │   │   └── End.jpg
 │   │   │   │   │   └── Compressed/
 │   │   │   │   │       ├── DARKS/        # Compressed darks (.jpg)
 │   │   │   │   │       └── LIGHTS/       # Compressed lights (.jpg)
 │   │   │   ├── 4janrun2/
 │   │   │   ├── 05-Jan-2025/
-│   │   │   ├── 1-Feb-2025/
 │   │   │   └── ...
-│   │
 │   │   ├── RAWonly/
 │   │   │   ├── 02-Dec-2024/
 │   │   │   │   ├── 2decrun1/
@@ -67,15 +64,18 @@ MobilTelesco/
 │   ├── Labelled/
 │   │   └── 8-Classes/
 │   │       ├── 04-Jan-2025/
-│   │       │   ├── IMG_*.jpg            # Compressed image
-│   │       │   └── IMG_*.txt            # Class label file (YOLO-style)
+│   │       │   ├── IMG_*.jpg            # Input images
+│   │       │   └── IMG_*.txt            # YOLO-style class labels
 │   │       ├── 05-Jan-2025/
 │   │       ├── 1-Feb-2025/
 │   │       └── ...
 │
-├── LICENSE                             # CC-BY 4.0 License
-└── README.md                           # Project overview, structure, and usage instructions
+├── LICENSE         # CC-BY 4.0 License
+└── README.md       # Project overview, usage, citation
+```
+
 </details>
+
 
 ---
 
