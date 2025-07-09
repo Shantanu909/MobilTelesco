@@ -115,7 +115,7 @@ You are free to:
 
 If you use this dataset in your work, please cite:
 
-Shantanusinh Parmar. (2025). MobilTelesco: A Smartphone-Based Astrophotography Dataset. Zenodo.
+Shantanu Parmar and sophiabhatti (2025) “Shantanu-Parmar/MobilTelesco: MobilTelesco v1.0.1”. Zenodo. doi: 10.5281/zenodo.15846941.
 
 ---
 
